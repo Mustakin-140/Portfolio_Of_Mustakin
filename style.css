@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    ;
+}
+
+:root {
+    --bg-color: #191f36;
+    --snd-bg-color: #262840;
+    --text-color: #fff;
+    --main-color: #5982F4;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/*navbar*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 700;
+    cursor: default;
+}
+
+.navbar a {
+    font-size: 1.9rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    font-weight: 700;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+#menu-icon {
+    font-size: 3.2rem;
+    color: var(--text-color);
+    display: none;
+}
+
+/*home section*/
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home-content h3 {
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+.home-content h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+
+}
+
+.home-img img {
+    width: 25vw;
+    animation: floatImage 3s ease-in-out infinite;
+    margin-left: 30px;
+}
+
+.multiple-text {
+    color: rgb(10, 111, 219);
+    font-size: 3.5rem;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.4rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: .2rem solid crimson;
+    border-radius: 50%;
+    font-size: 3rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--snd-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 20px;
+    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    background-color: antiquewhite;
+    color: red;
+}
+
+
+/*about section*/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    background: var(--snd-bg-color);
+    padding-top: 25px;
+
+}
+
+.about-img img {
+    width: 450px;
+    height: 450px;
+    border: 5px solid #8998c2;
+    border-radius: 5%;
+
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+
+/*education section*/
+.education {
+    height: 50px;
+    margin-bottom: 20px;
+    /* Decrease this value as needed */
+    padding-bottom: 0;
+    /* Ensure no extra padding at the bottom */
+}
+
+.carousel {
+    position: relative;
+    max-width: 700px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+
+}
+
+/*
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+*/
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.carousel-control.prev {
+    left: 10px;
+}
+
+.carousel-control.next {
+    right: 10px;
+}
+
+.carousel-item .degree {
+    text-align: center;
+    font-size: 40px;
+    color: aquamarine;
+}
+
+.carousel-item .major {
+    text-align: center;
+    font-size: 30px;
+}
+
+.carousel-item .institution {
+    text-align: center;
+    font-size: 25px;
+}
+
+.carousel-item .session {
+    text-align: center;
+    font-size: 25px;
+}
+
+.carousel-item .grade {
+    text-align: center;
+    font-size: 25px;
+}
+
+.edubtn {
+
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-size: 20px;
+    box-shadow: 0 0 1rem var(--main-color);
+    color: var(--bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+    align-items: center;
+    justify-content: center;
+    margin-left: 250px;
+    margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+    text-decoration: none;
+
+
+
+}
+
+/*skills section*/
+
+.skills h2 {
+    margin-bottom: 5rem;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skills-container .skills-box {
+    flex: 1 1 30rem;
+    background: var(--snd-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    font-size: 22px;
+    transition: .5s ease;
+
+}
+
+.skills-container .skills-box h3 {
+    color: aquamarine;
+}
+
+.skills-container .skills-box:hover {
+
+    cursor: pointer;
+    background: var(--main-color);
+    transform: scale(1.02);
+}
+
+.education .skills {
+    padding: -10px;
+    margin: 0;
+
+}
+
+.education {
+    margin-bottom: 10px;
+    /* Decrease space below section 1 */
+}
+
+.skills {
+    margin-top: -300px;
+    /* Decrease space above section 2 */
+}
+
+.skills-box i {
+    font-size: 5rem;
+
+}
+
+/*projects section*/
+
+#projects {
+    position: relative;
+    padding-top: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.projects-container {
+    padding-top: 25px;
+}
+
+.project-img {
+    border-radius: 2rem;
+    width: 90%;
+    height: 90%;
+}
+
+.project-header {
+    margin: 1rem;
+    color: beige;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.topic {
+    text-align: center;
+    font-size: 1.8rem;
+    color: aquamarine;
+}
+
+.project-btn button {
+    background-color: #5982F4;
+    border: 3px solid#ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-left: 675px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/*contact section*/
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--snd-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+/*footer section*/
+.footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--snd-bg-color);
+}
+
+.footer-text {
+    font-size: 1.6rem;
+}
+
+.footer-icontop {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem 1rem;
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.footer-icontop a:hover {
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.footer-icontop a i {
+    font-size: 2.4rem;
+    color: var(--snd-bg-color);
+}
+
+/*breakpoint*/
+
+@media(max-width:1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media(max-width:991px) {
+    .header {
+        padding: 2rem 3%;
+    }
+
+    section {
+        padding: 10rem 3%;
+    }
+
+    .education {
+        padding: 7rem;
+    }
+}
+
+/* Additional responsive styles */
+@media(max-width:768px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        background: var(--bg-color);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .navbar a {
+        font-size: 2rem;
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .header.active .navbar {
+        display: flex;
+    }
+
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 50%;
+        margin: 2rem 0;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        width: 80%;
+        height: auto;
+    }
+
+    .skills-container {
+        flex-direction: column;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-btn button {
+        margin-left: 0;
+        display: block;
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .contact form .input-box input {
+        width: 100%;
+    }
+}
+
+@media(max-width:480px) {
+    html {
+        font-size: 50%;
+    }
+
+    .navbar a {
+        font-size: 1.8rem;
+    }
+
+    .home-content h1 {
+        font-size: 4.5rem;
+    }
+
+    .skills-container .skills-box {
+        font-size: 1.6rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .carousel {
+        height: auto;
+    }
+
+    .carousel-item h1,
+    .carousel-item h2,
+    .carousel-item h3 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.8rem;
+    }
+
+    .project-header {
+        font-size: 2.5rem;
+    }
+
+    .topic {
+        font-size: 1.5rem;
+    }
+
+    .project-btn button {
+        font-size: 1.6rem;
+    }
+
+    .contact form .btn {
+        font-size: 1.8rem;
+    }
+
+    .footer-text {
+        font-size: 1.4rem;
+    }
+
+    .footer-icontop a i {
+        font-size: 2rem;
+    }
+}

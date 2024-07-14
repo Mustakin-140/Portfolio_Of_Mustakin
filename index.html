@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--custom CSS file-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--font awesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <title>Portfolio of Md Mustakin Mahi</title>
+</head>
+
+<body>
+
+    <!--header section-->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+    <!--home section-->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, I'm</h3>
+            <h1>Md Mustakin Mahi</h1>
+            <h3>I'm a Passionate <span class="multiple-text"></span></h3>
+            <div class="social-media">
+                <a href="https://www.facebook.com/mustakin.mahi"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/mustakin140/"><i class="fa-brands fa-instagram"></i></i></a>
+                <a href="https://www.linkedin.com/in/md-mustakin-mahi-262010200/"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/@mustakin140"><i class="fa-brands fa-youtube"></i></a>
+
+            </div>
+            <a href="resume.pdf" class="btn">Download Resume</a>
+        </div>
+        <div class="home-img">
+            <img src="mahi.png" alt="">
+        </div>
+    </section>
+
+    <!--About section-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="mypic.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>CSE Graduate & Frontend Developer</h3>
+            <p>I have completed my graduation from the Department of Computer Science & Engineering of Southeast
+                University. I am a passionate Frontend Web Developer and an IT enthusiast.</p>
+            <a href="about.html" class="btn">Read More</a>
+        </div>
+
+    </section>
+
+    <!--education section-->
+    <section class="education" id="education">
+        <h2 class="heading"><i class="fa-solid fa-book-open"></i> My <span>Education</span></h2> <br>
+
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <h1 class="degree">Bachelor of Science</h1>
+                    <h2 class="major">Major: Computer Science & Engineering</h2>
+                    <h2 class="institution">Institution: Southeast University, Bangladesh</h2>
+                    <h3 class="session">Session: 2020-2024</h3>
+                    <h3 class="grade">CGPA: 3.45</h3>
+                    <a href="university.html" class="edubtn">About University Life</a>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="degree">Higher Secondary Certificate</h1>
+                    <h2 class="major">Major: Science</h2>
+                    <h2 class="institution">Institution: Shaheed Police Smrity College</h2>
+                    <h3 class="session">Session: 2017-2019</h3>
+                    <h3 class="grade">GPA: 4.75</h3>
+                    <a href="college.html" class="edubtn">About College Life</a>
+                </div>
+                <div class="carousel-item">
+                    <h1 class="degree"> Secondary School Certificate</h1>
+                    <h2 class="major">Major: Science</h2>
+                    <h2 class="institution">Institution: Shaheed Police Smrity College</h2>
+                    <h3 class="session">Session: 2015-2017</h3>
+                    <h3 class="grade">GPA: 5.00</h3>
+                    <a href="school.html" class="edubtn">About School Life</a>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+        </div>
+
+    </section>
+
+    <!--skills-->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skills-box">
+                <i class="fa-brands fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-css3"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-bootstrap"></i>
+                <h3>Bootstrap</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-python"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-c"></i>
+                <h3>C Programming Language</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-solid fa-database"></i>
+                <h3>Database</h3>
+            </div>
+
+            <div class="skills-box">
+                <i class="fa-brands fa-microsoft"></i>
+                <h3>Microsoft Office</h3>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--projects section-->
+    <section id="projects">
+        <h1 class="title">My <span>Projects</span></h1>
+        <div class="project-box">
+            <div class="projects-container">
+                <img src="p1.png" alt="" class="project-img">
+            </div>
+            <h2 class="project-header">Travel</h2>
+            <p class="topic">This is a Travel Agency Website built using HTML, CSS, Bootstrap Framework</p>
+            <div class="project-btn">
+                <a href="https://toursandchill.netlify.app/"><button>View Live Project</button></a>
+            </div>
+
+            <div class="projects-container">
+                <img src="p2.png" alt="" class="project-img">
+            </div>
+            <h2 class="project-header">Resto.</h2>
+            <p class="topic">This is a Restaurent Website built using HTML, CSS, Bootstrap Framework </p>
+            <div class="project-btn">
+                <a href="https://foodserver.netlify.app/"><button>View Live Project</button></a>
+            </div>
+
+            <div class="projects-container">
+                <img src="p3.png" alt="" class="project-img">
+            </div>
+            <h2 class="project-header">Groco</h2>
+            <p class="topic">This is an Ecommerce Website built using HTML, CSS, Bootstrap Framework</p>
+            <div class="project-btn">
+                <a href="https://grocohub.netlify.app/"><button>View Live Project</button></a>
+            </div>
+        </div>
+
+    </section>
+
+    <!--contact section-->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Enter your Full Name">
+                <input type="email" placeholder="Enter your Email">
+
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Enter your Phone Number">
+                <input type="text" placeholder="Enter your Email Subject">
+
+            </div>
+
+            <textarea name="" id="" cols="30" rows="10" placeholder="Write your message"></textarea>
+            <input type="submit" value="Drop your message" class="btn">
+        </form>
+    </section>
+
+    <!--footer section-->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright &copy; 2024 by @MdMustakinMahi | All rights reserved.</p>
+        </div>
+        <div class="footer-icontop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+    </footer>
+    <!--JS file-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
